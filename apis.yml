@@ -1,8 +1,25 @@
 aid: govport
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/govport.png
 name: Govport
-description: 'Govport is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'GovPort is a Software-as-a-Service platform built specifically for government contractors
+  (GovCons) to manage subcontractor performance, compliance, and collaboration. It centralizes critical
+  contract records, sends primes and subs automated requirements to keep every party compliant, and lets
+  GovCons securely share and manage deliverables with one another across teams. Positioned as subcontractor
+  management software for the federal contracting ecosystem, GovPort emphasizes high levels of data privacy
+  and security. It was surfaced as a portfolio company of QED Investors and added to the API Evangelist
+  network; the company references APIs in its terms of service but does not publish a public developer
+  portal, API reference, or machine-readable specification at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/govport/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Fintech
+- Government Contracting
+- GovCon
+- Compliance
+- Subcontractor Management
+- SaaS
+- GovTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +46,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.govport.com
+  url: https://www.govport.com
+- type: TermsOfService
+  url: https://www.govport.com/terms-of-service
+- type: LinkedIn
+  url: https://www.linkedin.com/company/govport
+- type: DomainSecurity
+  url: security/govport-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
